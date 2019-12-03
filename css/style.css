@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css?family=Muli');/*Подключили шрифт с сайта google.font.com*/
+
+body {
+    font-family: 'Muli', sans-serif;
+    margin: 0%;
+    background: #eee;
+    height: auto;
+}
+h1 {
+    font-weight: 400;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+h2 {
+    font-weight: 400;
+    font-size: 1.2rem;
+    text-transform: capitalize;
+    margin: 0;
+}
+
+img {
+    display: block;
+    width: 100%;
+}
+
+main {
+    max-width: 900px;/*выводим картинки и текст мэина по середине независимо от ширины окна браузера, максимальная ширина картинок 900 пикселей*/
+    margin: auto;
+    box-shadow: 30px 0px 40px rgba(0,0,0,0.4), /*Тени мэина,НАДО Запомнить!*/
+    -30px 0px 40px rgba(0,0,0,0.4);
+}
+/*Лэндинг в начале страницы!*/
+#landing {
+    background: #fff;
+}
+
+#landing-text {
+    display: flex;/*флексбоксы о которых ичего пока не знаю*/
+    flex: 0 1 40vw;
+    height: 50vh;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-right: 1rem;
+    padding-left: 1rem;
+}
+
+#landing-text h2 {
+    color: #888;
+}   
+
+#landing-image {
+    background: url(https://source.unsplash.com/667uUSwqLiY);/*подключили фотку с сайта анплаш*/
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 50vh;
+    flex: 0 1 60vw;
+    margin: 0;
+}
+
+.btn {/*Кнопка View work*/
+    padding: 0.5rem 2rem;
+    border: 1px #ccc solid;
+    display: inline-block;
+    margin: 2rem 0 0; /*2rem on top*/
+    border-radius: 50px;/*закругляет кнопку*/
+    text-decoration: none;/*Снимает подчеркивание*/
+    color: #333;
+    transition: background 500ms ease; /*применяет стили к hover*/
+}
+
+.btn:hover {
+    background: #f4f4f4;/*меняет цвет кнопки при наведениии курсора*/
+
+}
+
+#header {/*фон надписи our work*/
+    padding: 1.5rem; 
+    text-align: center;
+    background: #333;
+    color: #fff;
+}
+
+#header h2 {/*надпись our work*/
+    border-left: dotted 1px #fff;
+    border-right: dotted 1px #fff;
+    display: inline-block;
+    padding-right: 1rem;
+    padding-left: 1rem;
+}
+
+caption {
+    padding: 0.8rem;
+    text-align: center;
+}
+
+ 
